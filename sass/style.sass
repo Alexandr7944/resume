@@ -10,7 +10,6 @@ $colorDark: rgb(42, 62, 78)
 
 body
   width: 100%
-  min-height: 1140px
   padding: 15px
   background-color: #f6f6f6
   display: flex
@@ -21,7 +20,6 @@ body
 
 .resume
   max-width: 800px
-  min-height: 1150px
   display: flex
   border-radius: 10px
   overflow: hidden
@@ -36,7 +34,8 @@ body
 
 .section-left
   gap: 50px
-  flex: 0 0 300px
+  flex: 0 0 250px
+  font-size: 0.7rem
   background-color: $colorDark
   color: $colorLight
 
@@ -83,5 +82,17 @@ body
       font-size: 14px
       color: $colorDark
 
-// @media screen and ( max-width: 650px )
+@media( max-width: 650px )
+  body
+    padding: 0
+
+  .resume
+    flex-wrap: wrap
+    flex-direction: column-reverse
+    border-radius: 0
+
+  .photo-conainer
+    display: none
   
+  .contact
+    font-size: 1rem
