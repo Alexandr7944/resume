@@ -17,9 +17,10 @@ body
   color: $colorLight
   line-height: 1.3
   font-family: Nunito, sans-serif
+  font-size: 14px
 
 .resume
-  max-width: 800px
+  max-width: 950px
   display: flex
   border-radius: 10px
   overflow: hidden
@@ -34,7 +35,7 @@ body
 
 .section-left
   gap: 50px
-  flex: 0 0 250px
+  flex: 0 0 200px
   font-size: 0.7rem
   background-color: $colorDark
   color: $colorLight
@@ -48,8 +49,7 @@ body
       height: auto
 
   .contact,
-  .education,
-  .about-me
+  .education
     @include list(#e3e6ec)
 
 .section-right
@@ -60,7 +60,8 @@ body
     width: 100%
   
 
-  .skils, .job
+  .skils,
+  .job
     width: 100%
     @include list(rgb(42, 62, 78))
 
@@ -71,16 +72,24 @@ body
     .skils-list
       margin-left: 30px
   
-  .about-me
+  .personality,
+  .projects
+    margin-right: auto
     @include list(rgb(42, 62, 78))
 
-    .about-me-list
+    .personality-list
       margin-bottom: 20px
 
-  .job
-    span
-      font-size: 14px
-      color: $colorDark
+  .job-item ul
+    margin-left: 20px
+
+.certificate
+  padding: 5px
+  border: none
+  border-radius: 5px
+  background-color: $colorLight
+  color: $colorDark
+
 
 @media( max-width: 650px )
   body
