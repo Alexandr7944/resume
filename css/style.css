@@ -57,7 +57,7 @@ body {
   color: #e3e6ec;
 }
 .section-left .photo-conainer {
-  border-radius: 10px;
+  border-radius: 10px 0 0 0;
   overflow: hidden;
   width: 100%;
 }
@@ -167,6 +167,7 @@ body {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
     border-radius: 0;
+    min-width: 340px;
   }
   .photo-conainer {
     display: none;
