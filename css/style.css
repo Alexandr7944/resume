@@ -57,36 +57,42 @@ body {
   background-color: rgb(42, 62, 78);
   color: #e3e6ec;
 }
-.section-left .photo-conainer {
+
+.photo-conainer {
   border-radius: 10px 0 0 0;
   overflow: hidden;
   width: 100%;
 }
-.section-left .photo-conainer .photo {
+.photo-conainer .photo {
   width: 100%;
   height: auto;
 }
-.section-left .contact ul,
-.section-left .education ul {
+
+.contact,
+.education {
+  margin-right: auto;
+}
+.contact ul,
+.education ul {
   margin-top: 7px;
 }
-.section-left .contact li,
-.section-left .education li {
+.contact li,
+.education li {
   margin-bottom: 10px;
   list-style-type: none;
 }
-.section-left .contact li:last-child,
-.section-left .education li:last-child {
+.contact li:last-child,
+.education li:last-child {
   margin-bottom: 0;
 }
-.section-left .contact a,
-.section-left .education a {
+.contact a,
+.education a {
   text-decoration: none;
   cursor: pointer;
   color: #e3e6ec;
 }
-.section-left .contact a:hover,
-.section-left .education a:hover {
+.contact a:hover,
+.education a:hover {
   text-decoration: underline;
 }
 

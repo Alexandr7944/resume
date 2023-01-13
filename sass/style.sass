@@ -40,17 +40,18 @@ body
   background-color: $colorDark
   color: $colorLight
 
-  .photo-conainer
-    border-radius: 10px 0 0 0
-    overflow: hidden
+.photo-conainer
+  border-radius: 10px 0 0 0
+  overflow: hidden
+  width: 100%
+  .photo
     width: 100%
-    .photo
-      width: 100%
-      height: auto
+    height: auto
 
-  .contact,
-  .education
-    @include list(#e3e6ec)
+.contact,
+.education
+  margin-right: auto
+  @include list(#e3e6ec)
 
 .section-right
   color: $colorDark
